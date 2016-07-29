@@ -42,4 +42,6 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::Controller('post','PostController');
     Route::resource('user','GetController');//资源控制器
+
+    Route::resource('git','GitController');//资源控制器
 });
