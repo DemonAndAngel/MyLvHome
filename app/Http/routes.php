@@ -43,3 +43,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::Controller('post','PostController');
     Route::resource('user','GetController');//资源控制器
 });
+
+Route::group(["prefix"=>'api/v1.0'],function (){
+    Route::resource('lessons','LessonsController');//资源控制器
+});

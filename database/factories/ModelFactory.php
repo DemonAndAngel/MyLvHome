@@ -21,9 +21,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 
-$factory->define(App\Task::class, function (Faker\Generator $faker) {
+$factory->define(App\Lesson::class, function (Faker\Generator $faker) {
     return [
-        'name' => str_random(10),
+        'title' => $faker->sentence,
+        'body' => $faker->paragraph,
+        'free' => $faker->boolean(),
     ];
 });
 
