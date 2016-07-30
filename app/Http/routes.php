@@ -47,3 +47,6 @@ Route::group(['middleware' => ['web']], function () {
 Route::group(["prefix"=>'api/v1.0'],function (){
     Route::resource('lessons','LessonsController');//资源控制器
 });
+Route::get('/post',function (){
+    return \App\User::with('posts')->where('post.id','>',10)->get();
+});
