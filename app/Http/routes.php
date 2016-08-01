@@ -21,13 +21,13 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-$api = app('Dingo\Api\Routing\Router');
-$api->version('v1', function ($api) {
-    $api->group(['namespace' => 'App\Api\Controllers'], function ($api) {
-        $api->get('lessons','LessonsController@index');
-    });
-});
-/*
+//$api = app('Dingo\Api\Routing\Router');
+//$api->version('v1', function ($api) {
+//    $api->group(['namespace' => 'App\Api\Controllers'], function ($api) {
+//        $api->get('lessons','LessonsController@index');
+//    });
+//});
+
 
 Route::group(['middleware' => ['web']], function () {
 
@@ -55,4 +55,3 @@ Route::group(["prefix"=>'api/v1.0'],function (){
 Route::get('/post',function (){
     return \App\User::with('posts')->where('id','>',10)->get();
 });
-*/

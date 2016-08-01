@@ -34,9 +34,9 @@ $(function () {
                 type: 'post',
                 success: function (data) {
                     if(data='1')
-                        alert('添加成功！');
+                        alert('success');
                     else
-                        alert('添加失败！');
+                        alert('error');
                 }
             });
         }
