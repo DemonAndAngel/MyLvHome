@@ -49,15 +49,10 @@
     "config": {
         "preferred-install": "dist"
     },
-    "repositories":
-    [
-        {
+    "repositories": {
+        "packagist": {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/DemonAndAngel/MyLvHome.git"
         }
-    ]
+    }
 }
