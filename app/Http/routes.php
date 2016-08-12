@@ -47,6 +47,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::Controller('post','PostController');
     Route::resource('user','GetController');//资源控制器
+    Route::get('/test','TestController@index');
 });
 
 Route::group(["prefix"=>'api/v1.0'],function (){
