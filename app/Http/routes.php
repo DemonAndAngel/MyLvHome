@@ -59,3 +59,6 @@ Route::get('/post',function (){
 Route::get('/test345',function (){
     return '312';
 });
+Route::get('/test543'.function (){
+    return '543';
+});
