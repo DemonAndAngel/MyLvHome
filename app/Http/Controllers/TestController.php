@@ -26,4 +26,7 @@ class TestController extends Controller
         else
             return 0;
     }
+    public function index2(){
+        return 'test';
+    }
 }
