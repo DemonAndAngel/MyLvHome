@@ -36,4 +36,7 @@ class IndexController extends Controller
         $task->delete();
         return redirect('/');
     }
+    public function test(){
+        return "master test2";
+    }
 }
