@@ -56,3 +56,6 @@ Route::group(["prefix"=>'api/v1.0'],function (){
 Route::get('/post',function (){
     return \App\User::with('posts')->where('id','>',10)->get();
 });
+Route::get('/test345',function (){
+    return '312';
+});
