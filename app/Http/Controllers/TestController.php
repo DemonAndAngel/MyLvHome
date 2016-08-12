@@ -28,5 +28,6 @@ class TestController extends Controller
     }
     public function mastertest123(){
         return "213";
+
     }
 }
